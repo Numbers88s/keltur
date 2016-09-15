@@ -28,6 +28,7 @@
     "gulp-logger": "0.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
+    "jshint": "^2.9.3",
     "open": "0.0.5"
   }
 }

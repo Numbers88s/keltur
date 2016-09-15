@@ -42,7 +42,7 @@ var paths = {
   html: 'app/index.html',
   js: 'app/scripts/',
   sass: 'app/assets/scss/',
-  css: 'app/css/'
+  css: 'app/assets/css/'
 };
 
 /*
@@ -136,7 +136,7 @@ gulp.task('clean', function () {
  **/
 
 gulp.task('ascii', function() {
-  return gulp.src('./claude-shannon.txt')
+  return gulp.src('./keltur.txt')
     .pipe($.cat());
 });
 
