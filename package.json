@@ -1,0 +1,19 @@
+{
+  "name": "keltur",
+  "version": "1.0.0",
+  "description": "Web Application for the best Interior Design Company",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Numbers88s/keltur.git"
+  },
+  "author": "Cesar Jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Numbers88s/keltur/issues"
+  },
+  "homepage": "https://github.com/Numbers88s/keltur#readme"
+}
