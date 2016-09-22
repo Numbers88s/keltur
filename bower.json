@@ -1,0 +1,20 @@
+{
+  "name": "keltur",
+  "description": "Web Application for the best Interior Design Company",
+  "main": "app.js",
+  "authors": [
+    "Cesar Jimenez"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Numbers88s/keltur",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
