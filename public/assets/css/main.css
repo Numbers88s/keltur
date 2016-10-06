@@ -256,7 +256,7 @@ body.bootstrap.public-home .this-could-be-your-fix .expected-item {
     background-size: auto 90%; } }
 
 @media screen and (min-width: 992px) {
-  body.bootstrap.public-home .this-could-be-your-fix .expected-item.four {
+  body.bootstrap.public-homef .this-could-be-your-fix .expected-item.four {
     background-position: 75% center; } }
 
 .this-could-be-your-fix .expected-item .container .row:before {

@@ -4,7 +4,8 @@
   "description": "Web Application for the best Interior Design Company",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "run-sequence": "^1.2.2"
   },
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "serve-favicon": "^2.3.0"
   }
 }

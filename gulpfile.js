@@ -39,10 +39,10 @@ var $ = require('gulp-load-plugins')();
  **/
 
 var paths = {
-  html: 'app/index.html',
-  js: 'app/scripts/',
-  sass: 'app/assets/scss/',
-  css: 'app/assets/css/'
+  html: 'index.html',
+  js: 'public/scripts/',
+  sass: 'public/assets/scss/',
+  css: 'public/assets/css/'
 };
 
 /*
@@ -67,7 +67,7 @@ gulp.task('sass', function() {
     .pipe(logger({
       before: 'Starting Sass...',
       after: 'Sass complete!',
-      dest: 'app/css/',
+      dest: paths.css,
       extname: '.min.css',
       display: 'name',
       showChange: true
@@ -88,11 +88,11 @@ gulp.task('sass', function() {
 gulp.task('watch', ['connect', 'serve'], function() {
     gulp.watch(paths.js + '*.js', ['lint']);
     gulp.watch(paths.sass + '*.scss', ['sass']);
-    gulp.watch(['./app/*.html', 'app/**/*.html'], ['html']);
+    gulp.watch(['./*.html', '**/*.html'], ['html']);
 });
 
 gulp.task('html', function() {
-  gulp.src('./app/*.html')
+  gulp.src('*.html')
     .pipe(connect.reload());
 });
 
@@ -140,10 +140,10 @@ gulp.task('ascii', function() {
     .pipe($.cat());
 });
 
-gulp.task('copy', function() {
-  return gulp.src('./app/**')
-    .pipe(gulp.dest('./build/'));
-});
+// gulp.task('copy', function() {
+//   return gulp.src('./**')
+//     .pipe(gulp.dest('./build/'));
+// });
 
 /*
  *  Entry point. Runs all the other tasks.
@@ -154,7 +154,7 @@ gulp.task('copy', function() {
 
 gulp.task('build', ['ascii','lint', 'sass']);
 
-gulp.task('deploy', ['build', 'copy']);
+// gulp.task('deploy', ['build', 'copy']);
 
 gulp.task('default', ['clean'], function() {
   gulp.start('build');

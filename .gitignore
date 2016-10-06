@@ -14,7 +14,8 @@ app/.DS_Store
 node_modules/
 
 # Bower
-app/bower_components/
+public/bower_components/
+bower_components
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
